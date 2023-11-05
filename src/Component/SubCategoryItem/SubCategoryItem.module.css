@@ -1,0 +1,27 @@
+.container {
+    border: none;
+    background-color: #eee4;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.container .pic {
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(7, 226, 255);
+    margin-right: 10px;
+}
+
+.container .name {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container .total {
+    font-size: 0.9rem;
+}
