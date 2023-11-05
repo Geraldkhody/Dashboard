@@ -1,15 +1,8 @@
 .cate {
-    display: flex;
-}
-
-.main {
     width: 100%;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
 }
 
-.container .head {
+.head {
     margin: 1rem 0 2rem;
     font-weight: 500;
     font-size: 2rem;
@@ -18,5 +11,5 @@
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
 }

@@ -10,7 +10,9 @@ const Navbar = () => {
           spellCheck="true"
           placeholder="Search for Category..."
         />
-        <i className={`${style['search-icon']} fa fa-search`}></i>
+        <div className={style['search-button']}>
+          <i className={`${style['search-icon']} fa fa-search`}></i>
+        </div>
       </div>
       <div className={style.profile}>
         <div className={style.username}>Stanislaus</div>

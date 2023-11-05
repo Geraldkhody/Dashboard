@@ -17,14 +17,23 @@
     outline: none;
     border-radius: 10px;
     background-color: #38caff4f;
-    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    padding: 0.5rem 2.8rem 0.5rem 1rem;
 }
 
-.search .search-icon {
+.search-button {
+    cursor: pointer;
+    padding-left: 7px;
+    /* border: 1px solid; */
     position: absolute;
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
+
+}
+
+.search .search-icon {
+    color: #444;
+    
 }
 
 .profile {
