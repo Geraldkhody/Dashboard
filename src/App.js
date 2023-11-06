@@ -13,8 +13,8 @@ function App() {
           <Navbar />
         <div className={style.container}>
           <>
-            <Categories />
-            {/* <SubCategory /> */}
+            {/* <Categories /> */}
+            <SubCategory />
           </>
 
         </div>

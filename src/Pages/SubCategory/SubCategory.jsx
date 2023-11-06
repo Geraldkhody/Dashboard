@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./SubCategory.module.css";
-// import Sort from "../../Component/Sort/Sort";
+import Sort from "../../Component/Sort/Sort";
 
 const SubCategory = () => {
   return (
@@ -23,68 +23,70 @@ const SubCategory = () => {
               </div>
             </div>
             <div className={style['time-money']}>
-                <div className={style.time}>20 : 30: 15 : 20</div>
-                <div className={style['total-amount']}>GHS 96000000</div>
+                <div className={style.time}><span className={style['text']}>Time Left:</span> 20 : 30: 15 : 20</div>
+                <div className={style['total-amount']}><span className={style['text']}>Total Amount:</span> GHS 96000000</div>
             </div>
           </div>
 
-          <table className={style.results}>
-            {/* <caption>
-              <div>Total: 10 nominees</div>
-              <Sort />
-            </caption> */}
-            <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>Gender</th>
-                  <th>Votes</th>
-                  <th>Date</th>
-                  <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                  <td>Ceados Khody</td>
-                  <td>Male</td>
-                  <td className={style['each-vote']}>54</td>
-                  <td>20-12-23</td>
-                  <td className={style.delete}>Delete</td>
-              </tr>
-              
-              <tr>
-                  <td>Ceados Khody</td>
-                  <td>Male</td>
-                  <td className={style['each-vote']}>54</td>
-                  <td>20-12-23</td>
-                  <td className={style.delete}>Delete</td>
-              </tr>
-              
-              <tr>
-                  <td>Ceados Khody</td>
-                  <td>Male</td>
-                  <td className={style['each-vote']}>54</td>
-                  <td>20-12-23</td>
-                  <td className={style.delete}>Delete</td>
-              </tr>
-              
-              <tr>
-                  <td>Ceados Khody</td>
-                  <td>Male</td>
-                  <td className={style['each-vote']}>54</td>
-                  <td>20-12-23</td>
-                  <td className={style.delete}>Delete</td>
-              </tr>
-              
-              <tr>
-                  <td>Ceados Khody</td>
-                  <td>Male</td>
-                  <td className={style['each-vote']}>54</td>
-                  <td>20-12-23</td>
-                  <td className={style.delete}>Delete</td>
-              </tr>
-              
-            </tbody>
-          </table>
+          <div className={style['results-container']}>
+              <div className={style['table-head']}>
+                <div>Total: 10 nominees</div>
+                <Sort />
+              </div>
+            <table className={style.results}>
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Votes</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Ceados Khody</td>
+                    <td>Male</td>
+                    <td className={style['each-vote']}>54</td>
+                    <td>20-12-23</td>
+                    <td className={style.delete}>Delete</td>
+                </tr>
+                
+                <tr>
+                    <td>Ceados Khody</td>
+                    <td>Male</td>
+                    <td className={style['each-vote']}>54</td>
+                    <td>20-12-23</td>
+                    <td className={style.delete}>Delete</td>
+                </tr>
+                
+                <tr>
+                    <td>Ceados Khody</td>
+                    <td>Male</td>
+                    <td className={style['each-vote']}>54</td>
+                    <td>20-12-23</td>
+                    <td className={style.delete}>Delete</td>
+                </tr>
+                
+                <tr>
+                    <td>Ceados Khody</td>
+                    <td>Male</td>
+                    <td className={style['each-vote']}>54</td>
+                    <td>20-12-23</td>
+                    <td className={style.delete}>Delete</td>
+                </tr>
+                
+                <tr>
+                    <td>Ceados Khody</td>
+                    <td>Male</td>
+                    <td className={style['each-vote']}>54</td>
+                    <td>20-12-23</td>
+                    <td className={style.delete}>Delete</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
