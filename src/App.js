@@ -4,8 +4,16 @@ import Categories from "./Pages/Categories/Categories";
 import SubCategory from './Pages/SubCategory/SubCategory';
 import Aside from './Component/Aside/Aside';
 import Navbar from './Component/Navbar/Navbar';
+import { useState } from 'react';
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const SubCategoryHandler = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className={style.app}>
       <Aside />
@@ -13,8 +21,8 @@ function App() {
           <Navbar />
         <div className={style.container}>
           <>
-            {/* <Categories /> */}
-            <SubCategory />
+            {!isOpen && <Categories SubCategoryHandler={SubCategoryHandler} />}
+            {isOpen && <SubCategory />}
           </>
 
         </div>

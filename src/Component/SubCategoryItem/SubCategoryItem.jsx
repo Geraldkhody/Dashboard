@@ -1,9 +1,10 @@
 import React from "react";
 import style from "./SubCategoryItem.module.css"
+import SubCategory from "../../Pages/SubCategory/SubCategory";
 
-const SubCategoryItem = () => {
+const SubCategoryItem = ({SubCategoryHandler}) => {
   return (
-    <div className={style.container}>
+    <div className={style.container} onClick={SubCategoryHandler}>
       <div className={style.pic}></div>
       <div>
         <div className={style.name}>Category Name</div>

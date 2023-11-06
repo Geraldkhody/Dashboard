@@ -3,7 +3,7 @@ import style from "./Categories.module.css";
 import SubCategoryItem from "../../Component/SubCategoryItem/SubCategoryItem";
 import Sort from "../../Component/Sort/Sort";
 
-const Categories = () => {
+const Categories = ({SubCategoryHandler}) => {
   return (
     <div className={style.cate}>
       <div className={style.header}>
@@ -11,18 +11,19 @@ const Categories = () => {
         <Sort />
       </div>
       <div className={style.body}>
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
-        <SubCategoryItem />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        <SubCategoryItem SubCategoryHandler={SubCategoryHandler} />
+        
       </div>
     </div>
   );
