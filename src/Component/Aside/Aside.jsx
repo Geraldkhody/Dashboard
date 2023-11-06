@@ -6,12 +6,9 @@ const Aside = () => {
 
   const toggleHandler = (e) => {
     setVoteIsActive(!voteIsActive);
-    console.log(e.target.classList);
   }
 
   const activateClasses = voteIsActive ? `${style.activate} ${style.isActive}` : `${style.activate}`;
-
-
 
   return (
     <div className={style.wrapper}>
