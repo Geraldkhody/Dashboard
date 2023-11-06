@@ -1,27 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from "./Aside.module.css";
 
 const Aside = () => {
+  const [voteIsActive, setVoteIsActive] = useState(false);
+
+  const toggleHandler = (e) => {
+    setVoteIsActive(!voteIsActive);
+    console.log(e.target.classList);
+  }
+
+  const activateClasses = voteIsActive ? `${style.activate} ${style.isActive}` : `${style.activate}`;
+
+
+
   return (
-    <div className={style.container}>
-      <div>
-        <div>
-          <i className="fa fa-home"></i>
-          <span>Dashboard</span>
-        </div>
-        <div>
-          <i className="fa fa-user"></i>
-          <span>Categories</span>
-        </div>
-        <div>
-          <i className="fa fa-settings"></i>
-          <span>Settings</span>
-        </div>
+    <div className={style.wrapper}>
+      <div className={style['logo-profile']}>
+        <span className={style['logo-icon']}></span>
+        <span className={style['logo-name']}>Voting</span>
       </div>
 
-      <button className={style.activate}>
-        ACTIVATE VOTING
-      </button>
+      <div className={style.container}>
+        <div>
+          <div className={style['side-links']}>
+            <span className={style.icon}>
+              <i className="fa fa-house"></i>
+            </span>
+            <span className={style['link-name']}>Dashboard</span>
+          </div>
+          <div className={style['side-links']}>
+            <span className={style.icon}>
+              <i className="fa-regular fa-user"></i>
+            </span>
+            <span className={style['link-name']}>Categories</span>
+          </div>
+          <div className={style['side-links']}>
+            <span className={style.icon}>
+              <i className="fa fa-gear"></i>
+            </span>
+            <span className={style['link-name']}>Settings</span>
+          </div>
+        </div>
+
+        <button className={activateClasses} onClick={toggleHandler}>
+          {!voteIsActive && "ACTIVATE"} {voteIsActive && "DEACTIVATE"} <br /> VOTING
+        </button>
+
+      </div>
     </div>
   )
 }

@@ -9,10 +9,15 @@ function App() {
   return (
     <div className={style.app}>
       <Aside />
-      <div className={style.container}>
-        <Navbar />
-        {/* <Categories /> */}
-        <SubCategory />
+      <div className={style.wrapper}>
+          <Navbar />
+        <div className={style.container}>
+          <>
+            <Categories />
+            {/* <SubCategory /> */}
+          </>
+
+        </div>
 
       </div>
     </div>

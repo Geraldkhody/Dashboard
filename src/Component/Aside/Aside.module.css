@@ -1,23 +1,68 @@
-.container {
-    width: 20%;
+:root {
+    --LOGO-WIDTH: 7rem;
+}
+
+.wrapper {
+    width: var(--ASIDE-WIDTH);
     height: 100vh;
-    background: rgba(172, 205, 247, 0.296);
-    padding: 2rem;
-    padding-top: 10rem;
+    background: hsla(214, 82%, 82%, 0.294);
+    padding: 0.5rem;
+    padding-top: 0;
+    
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.logo-profile {
+    display: flex;
+    align-items: center;
+    height: var(--LOGO-WIDTH);
+    margin: 0 0 1.5rem 1rem;
+}
+
+.logo-profile .logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #2f2fff;
+    display: block;
+    border-radius: 10px;
+}
+
+.logo-profile .logo-name {
+    font-size: 1.2rem;
+    color: #000;
+    padding-left: 0.5rem;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - var(--LOGO-WIDTH) - 2rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.5rem;
-    
 }
 
-.container div {
-    margin-bottom: 1rem;
+.container .side-links {
+    margin-bottom: 0.2rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    /* border: 1px solid; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
-.container div i {
-    font-size: 1.8rem;
+.container .side-links:hover {
+    background-color: hsla(214, 82%, 75%, 0.294);
+}
+
+.container .icon  {
+    font-size: 1.1rem;
     padding-right: 10px;
+}
+
+.container .side-links:hover .link-name {
+    color: #000;
 }
 
 .activate {
@@ -26,10 +71,10 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    width: 85%;
-    height: 7rem;
+    width: 65%;
+    height: 4rem;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     text-align: center;
     border: green;
     border-radius: 10px;
@@ -38,5 +83,13 @@
 }
 
 .activate:hover {
+    filter: brightness(90%);
+}
+
+.activate.isActive {
+    background: rgb(210, 0, 0);
+}
+
+.activate.isActive:hover {
     filter: brightness(90%);
 }

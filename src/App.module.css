@@ -1,8 +1,29 @@
+:root {
+    --PAGE-WIDTH: 80%;
+    --TEXT-COLOR: #3f3f3f;
+    --ASIDE-WIDTH: 20%;
+    --NAVBAR-WIDTH: 5rem;
+    --CONTAINER-HEAD-SIZE: 1.8rem;
+    --CONTAINER-HEAD-WEIGHT: 500;
+}
+
+* {
+    color: var(--TEXT-COLOR);
+}
+
 .app {
     display: flex;
 }
 
+.wrapper {
+    width: calc(100% - var(--ASIDE-WIDTH));
+    position: relative;
+}
+
 .container {
-    padding: 2rem 5rem;
-    width: 70%;
+    width: var(--PAGE-WIDTH);
+    max-height: calc(100vh - var(--NAVBAR-WIDTH));
+    margin: auto;
+    /* overflow: hidden; */
+    box-sizing: border-box;
 }

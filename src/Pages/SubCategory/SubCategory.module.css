@@ -52,7 +52,7 @@
     font-size: 1.1rem;
 }
 
-.vote-number {
+.win-vote {
     font-size: 1.8rem;
     color: #6c6c6c;
 }
@@ -91,10 +91,20 @@
 
 .results thead tr {
     text-align: left;
-    background-color: #f3f3f3;
+    background-color: rgba(172, 205, 247, 0.296);
 }
 
 .results thead th, 
 .results tbody td {
     padding: 12px 2rem;
+}
+
+.delete {
+    color: red;
+    font-weight: 400;
+}
+
+.each-vote {
+    color: blue;
+    font-weight: 600;
 }
